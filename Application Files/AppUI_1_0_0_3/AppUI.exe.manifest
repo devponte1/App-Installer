@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AppUI.exe" version="1.0.0.3" publicKeyToken="5d13f4a18bdb2867" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AppUI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="AppUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppUI.exe" size="210880">
+      <assemblyIdentity name="AppUI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ApEXfOaXs5XhwbrefqUd4Ftrq0BM4/VITuyuNnRIt3c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ManagedWrapper.dll" size="112640">
+      <assemblyIdentity name="ManagedWrapper" version="1.0.9170.23321" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bi7NGyOiD/QHFTLUaRXDfwakk1wZMmwFpsS4Ctz9Dv4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AppUI.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icon.ico" size="101132">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sFKtiazMuMXepO7NYvc4MFSIulxYirtmYqxLiH2bKwg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PONTUS-PC\pontu" issuerKeyHash="21fb431fade1455b6b8e84307f310d3513136d4e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1dUjL/wU+/z1vNSQnu1KAspxEgHWfAIuR6aulvs9iX4=</DigestValue></Reference></SignedInfo><SignatureValue>X80tBFNj+uxbJg0Ky9/2tllqNO5F8RbvXVlufg5rMYxpUmvRPlIQZ98reDRL26bywH9FoFA46wmgrYnzwi2MCOqnrXoaOmDSD4YZT4mP5kMn1OnLduJ5sdBhVljO8w8UQkfBPFr8R7z2ot/Sin8J1tzpxQiS3di2TH673L4bQZk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>u3+q48UXhWnnk1d0btp/I67QfO6walT9PE2wAUP05AKjc/VFVdYhKkQYnUwiLN0N1fAeaLWSWIyzpeLqdOXra0kFxE32hTxeRflicet5b1PexOnuRT7bKV7IPv4sURcsMnwj5qHB3rVea3yixcRnax93HIRXIKftOmCDxZxZJxk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7e893dfb96aea6472e027cd6011271ca024aed9e90d4bcf5fcfb14fc2f23d5d5" Description="" Url=""><as:assemblyIdentity name="AppUI.exe" version="1.0.0.3" publicKeyToken="5d13f4a18bdb2867" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PONTUS-PC\pontu</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CG7UQ7SHTOOkJhMe1IMFE3BLSlDZEg2EDDqR7O8AVo8=</DigestValue></Reference></SignedInfo><SignatureValue>isO4k64KSw4n/wF0k51mf8V9hUfCYoccR2CHsORnyhcIcWUHdHlk4S5bXk8N8QrhsFnpvkwrzIXxfGa4oDe7Mst6cCN2jnB5bHtKOSKeA/roWyWTiTvttXecKg2zdsBg9RStU7z9SsYy60fkqEOhimq7+mKS6SnhTFO1lCoGG9Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>u3+q48UXhWnnk1d0btp/I67QfO6walT9PE2wAUP05AKjc/VFVdYhKkQYnUwiLN0N1fAeaLWSWIyzpeLqdOXra0kFxE32hTxeRflicet5b1PexOnuRT7bKV7IPv4sURcsMnwj5qHB3rVea3yixcRnax93HIRXIKftOmCDxZxZJxk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQf5LuIz1uq5pHmLeSb8PFnzANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AUABPAE4AVABVAFMALQBQAEMAXABwAG8AbgB0AHUwHhcNMjUwMjA4MTQxMzI0WhcNMjYwMjA4MjAxMzI0WjApMScwJQYDVQQDHh4AUABPAE4AVABVAFMALQBQAEMAXABwAG8AbgB0AHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALt/quPFF4Vp55NXdG7afyOu0HzusGpU/TxNsAFD9OQCo3P1RVXWISpEGJ1MIizdDdXwHmi1kliMs6Xi6nTl62tJBcRN9oU8XkX5YnHreW9T3sTp7kU+2yleyD7+LFEXLDJ8I+ahwd61Xmt8osXEZ2sfdxyEVyCn7Tpgg8WcWScZAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAoXQ2jgmueaNUV1msfJr8s9mmWCrs1uEktk4+sPAn2GmD1u/9647I3mZQQWS+vjkx/xqOCOTVqB3WP5ahPnn9D7NcbqkQe80q/RNZPNzyFw/fTJn5p9u4US95/V+EQQtqlGXwAxHnA+yTt9uKaM2iK1NnasInPZr48Psy/LtXl7w=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
